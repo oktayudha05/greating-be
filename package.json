@@ -1,0 +1,28 @@
+{
+  "name": "greating-be",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/oktayudha05/greating-be#readme",
+  "bugs": {
+    "url": "https://github.com/oktayudha05/greating-be/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oktayudha05/greating-be.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js",
+    "test": "jest",
+    "build": "echo 'No build step needed for plain JS' && exit 0",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {}
+}

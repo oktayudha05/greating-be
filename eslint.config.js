@@ -1,12 +1,12 @@
-import js from "@eslint/js";
-import globals from "globals";
+const js = require("@eslint/js");
+const globals = require("globals");
 
-export default [
+module.exports = [
   js.configs.recommended,
   {
     languageOptions: {
       ecmaVersion: "latest",
-      sourceType: "module",
+      sourceType: "commonjs", // Sesuaikan dengan project lo
       globals: {
         ...globals.node,
         ...globals.jest,
@@ -15,9 +15,9 @@ export default [
     rules: {
       "no-unused-vars": "warn",
       "no-console": "off",
-      "indent": ["error", 2],
-      "quotes": ["error", "double"],
-      "semi": ["error", "always"],
+      indent: ["error", 2],
+      quotes: ["error", "double"],
+      semi: ["error", "always"],
     },
   },
 ];

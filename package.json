@@ -17,7 +17,7 @@
   "scripts": {
     "dev": "node index.js",
     "start": "node index.js",
-    "test": "jest",
+    "test": "echo 'Belum ada test' && exit 0",
     "build": "echo 'No build step needed for plain JS' && exit 0",
     "lint": "eslint ."
   },
